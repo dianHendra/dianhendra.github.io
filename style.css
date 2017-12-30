@@ -1,0 +1,172 @@
+/*********************
+****************login HTML*
+*******************/
+.jumbotron-login {
+  background-image: url('img/pandawa.jpg');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-size: 100% 100%;
+  padding-top: 80px;
+}
+
+/*********************
+****************index HTML*
+*******************/
+.jumbotron-index {
+  background-image: url('img/pandawa.jpg');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-size: 100% 100%;
+  margin-bottom: 50px;
+}
+.main-jelekong{
+  font-family: 'Playball', cursive;
+}
+.tagline {
+  font-family: 'Great Vibes', cursive;
+}
+
+
+
+
+/***************************
+**************NavBar- sideBar galleri.html
+**************************/
+
+/*body {
+  margin: 0;}*/
+
+ul.sidenav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 30%%;
+    background-color: #f1f1f1;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+}
+
+ul.sidenav li a {
+    display: block;
+    color: #000;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+ 
+ul.sidenav li a.active {
+    background-color: #4CAF50;
+    color: white;
+}
+
+ul.sidenav li a:hover:not(.active) {
+    background-color: #555;
+    color: white;
+}
+
+div.content {
+    margin-left: 10%;
+    padding: 1px 16px;
+    height: 1000px;
+    overflow: auto;
+    text-align: center;
+}
+
+@media screen and (max-width: 900px) {
+    ul.sidenav {
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+    ul.sidenav li a {
+        float: left;
+        padding: 15px;
+    }
+    div.content {margin-left: 0;}
+}
+
+@media screen and (max-width: 400px) {
+    ul.sidenav li a {
+        text-align: center;
+        float: none;
+    }
+
+}
+
+
+
+
+
+/***************************
+**************CSS Galleri Lukisan
+**************************/
+
+.container-lukisan {
+    position: relative;
+    width: 50%;
+    float: left;
+}
+
+.image-lukisan {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.middle-lukisan {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%)
+}
+
+.container-lukisan:hover .image-lukisan {
+  opacity: 0.3;
+}
+
+.container-lukisan:hover .middle-lukisan {
+  opacity: 1;
+}
+
+.text-lukisan {
+  background-color: #4CAF50;
+  color: white;
+  font-size: 16px;
+  padding: 16px 32px;
+}
+
+.mySlides {
+  display:none;
+}
+
+.jenis-lukisan {
+  overflow: auto;
+  clear: both;
+  margin-top: 30px;
+}
+.container-gallery {
+  background-color: black;
+}
+
+/***************************
+*************Gallery Lukisan
+*************************/
+
+@media screen and (max-width: 400px){
+  .container-lukisan {
+    width: 100%
+  }
+}
+@media screen and (max-width: 600px){
+  .container-lukisan {
+    width: 50%
+  }
+}
